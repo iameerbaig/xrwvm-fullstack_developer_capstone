@@ -44,6 +44,6 @@ jobs:
     - name: Run jshint
       run: |
         find . -name "*.js" \
-          -not -path "./server/frontend/node_modules/*" \
-          -not -path "./server/frontend/build/*" \
+          -not -path "./server/frontend/*" \
+          -not -name "jquery*" \
           -exec jshint {} +
