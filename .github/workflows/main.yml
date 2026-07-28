@@ -45,5 +45,6 @@ jobs:
       run: |
         find . -name "*.js" \
           -not -path "./server/frontend/*" \
+          -not -path "./server/djangoenv/*" \
           -not -name "jquery*" \
-          -exec jshint {} +
+          -exec jshint --config .jshintrc {} +
