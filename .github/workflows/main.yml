@@ -1,0 +1,27 @@
+- name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8
+
+    - name: Lint with flake8
+      run: |
+        flake8 --version
+        find . -name "*.py" -exec flake8 --max-line-length=104 {} +
+
+  lint_js:
+    name: Lint JS Files
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install jshint
+      run: npm install jshint --global
+
+    - name: Run jshint
+      run: |
+        find . -name "*.js" \
+          -not -path "./server/frontend/node_modules/*" \
+          -not -path "./server/frontend/build/*" \
+          -exec jshint {} +
