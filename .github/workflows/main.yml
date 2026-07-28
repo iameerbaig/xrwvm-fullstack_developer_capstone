@@ -28,7 +28,7 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 --version
-        find . -name "*.py" -exec flake8 --max-line-length=104 {} +
+        find . -name "*.py" -not -path "*/migrations/*" -exec flake8 --max-line-length=104 {} +
 
   lint_js:
     name: Lint JS Files
