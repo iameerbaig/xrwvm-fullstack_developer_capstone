@@ -1,74 +1,85 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="/static/bootstrap.min.css">
-
 </head>
-  <h1>About Us</h1>
-  Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices.
-
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+      <a class="navbar-brand" href="/">Best Cars Dealership</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/about/">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact/">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/login/">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="/register/">Register</a></li>
+      </ul>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+
+  <div class="container mt-4">
+    <img src="/static/cars.jpeg" class="img-fluid rounded mb-4" alt="Our dealership showroom">
+
+    <h1>About Us</h1>
+    <p>
+      Best Cars Dealership has connected drivers with trusted dealerships since 2015.
+      We operate a nationwide network of over 50 dealerships across 20 states, offering
+      new and pre-owned vehicles from manufacturers including Toyota, Nissan, Audi,
+      Mercedes-Benz, and Kia. Every dealership on our platform is independently reviewed
+      by verified customers, and each review is analysed for sentiment so buyers can see
+      at a glance how a dealership is regarded. Our mission is to make car buying
+      transparent, informed, and fair.
+    </p>
+
+    <h2 class="mt-5">Our Team</h2>
+    <div class="row mt-3">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="/static/person1.jpg" class="card-img-top" alt="Priya Raghavan">
+          <div class="card-body">
+            <h5 class="card-title">Priya Raghavan</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Chief Executive Officer</h6>
+            <p class="card-text">
+              Priya founded the company after twelve years in automotive retail.
+              She leads strategy and partnerships with our dealership network.
+            </p>
+            <p class="card-text"><small>priya.raghavan@bestcars.com</small></p>
+          </div>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="/static/person2.jpg" class="card-img-top" alt="Daniel Okonkwo">
+          <div class="card-body">
+            <h5 class="card-title">Daniel Okonkwo</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Head of Engineering</h6>
+            <p class="card-text">
+              Daniel built and maintains the review platform, from the Django backend
+              to the sentiment analysis service that scores every submitted review.
+            </p>
+            <p class="card-text"><small>daniel.okonkwo@bestcars.com</small></p>
+          </div>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="/static/person3.jpg" class="card-img-top" alt="Sofia Marchetti">
+          <div class="card-body">
+            <h5 class="card-title">Sofia Marchetti</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Customer Experience Manager</h6>
+            <p class="card-text">
+              Sofia oversees review moderation and works directly with dealerships
+              to resolve customer concerns raised through the platform.
+            </p>
+            <p class="card-text"><small>sofia.marchetti@bestcars.com</small></p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
-
+  </div>
+</body>
 </html>
